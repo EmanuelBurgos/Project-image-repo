@@ -8,6 +8,33 @@ body{
     font-family: sans-serif;
 
 }
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+.btn-1,
+.btn-2 {
+padding: 10px 5px;
+width: 100%;
+height: 7%;
+display: flex;
+gap: 15px;
+justify-content: center;
+align-items: center;
+border: 2px solid #c4c4c4;
+border-radius: 8px;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+}
+.btn-2 {
+  background-color: #4f70b5;
+  color: white;
+}
+.or {
+  text-align: center;
+}
 
 .formulario{
     display: flex;
@@ -26,7 +53,7 @@ label{
     display: block;
     margin-bottom: 5px;
 }
-formulario div input {
+.formulario div input {
     width: 100%;
     height: 40px;
     border-radius: 8px;
@@ -35,7 +62,7 @@ formulario div input {
     padding: 0 30px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
-  formulario div {
+  .formulario div {
     position: relative;
     margin-bottom: 15px;
   }
@@ -77,32 +104,7 @@ button {
   button:hover {
     opacity: 0.8;
   }
-  .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
-  }
-  .btn-1,
-.btn-2 {
-  padding: 10px 5px;
-  width: 100%;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #c4c4c4;
-  border-radius: 8px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.btn-2 {
-    background-color: #4f70b5;
-    color: white;
-  }
-  .or {
-    text-align: center;
-  }
+  
   
   .pregunta {
     font-size: 15px;
@@ -115,6 +117,7 @@ button {
   .container {
     display: flex;
     flex-direction: row;
+  
   }
   .contenido {
     display: flex;
@@ -126,7 +129,7 @@ button {
     padding: 10px 20px;
   }
   
-  formulario {
+ .formulario {
      width: 45%;
      max-width: none;
   }
@@ -135,7 +138,7 @@ button {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    /* border: 2px solid black; */
+    border: 2px solid black; 
     height: 65%;
   }
   .texto {
@@ -144,7 +147,7 @@ button {
     font-size: 18px;
   }
   
-  formulario {
+  .formulario {
      width: 45%;
      max-width: none;
   }
@@ -152,9 +155,10 @@ button {
       .conteiner{
           flex-direction: column;
       }
-      formulario,
+      div
       .contenido{
           width: 100%;  
+          flex-direction: column;
       }
       .btn{
           flex-direction: column;
@@ -163,8 +167,10 @@ button {
           height: 70vh;
       }
   }
+  
   @media (max-width: 425px) {
     formulario {
       padding: 20px;
     }
+    
   }
